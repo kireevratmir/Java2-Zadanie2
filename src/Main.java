@@ -1,15 +1,17 @@
 public class Main {
     public static void main(String[] args) {
         int nachaln = 300;
-        int popoln = 1490;
+        int popoln = 200;
 
         int itog;
-        int bonus = popoln / 100;
+        int bonus;
 
         if (popoln > 300) {
+            bonus = popoln / 100;
             itog = bonus + nachaln + popoln;
         } else {
             itog = nachaln + popoln;
+            bonus = 0;
         }
         System.out.println("Итоговый счёт: " + itog);
         System.out.println("Количество бонусных рублей: " + bonus);
