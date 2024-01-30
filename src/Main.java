@@ -1,19 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        int nachaln = 300;
-        int popoln = 1000;
+        int startingBalance = 300;
+        int replenishment = 1000;
 
-        int itog;
+        int result;
         int bonus;
 
-        if (popoln > 1000) {
-            bonus = popoln / 100;
-            itog = bonus + nachaln + popoln;
+        if (replenishment > 1000) {
+            bonus = replenishment  / 100;
+            result = bonus + startingBalance + replenishment;
         } else {
-            itog = nachaln + popoln;
+            result = startingBalance + replenishment;
             bonus = 0;
         }
-        System.out.println("Итоговый счёт: " + itog);
+        System.out.println("Итоговый счёт: " + result);
         System.out.println("Количество бонусных рублей: " + bonus);
     }
 }
